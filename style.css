@@ -93,14 +93,7 @@
     z-index: 3;
     padding: 40px 0px 0px 40px;
 }
-.hidden-box-div, .hidden-box-div2{
-    height: 100vh;
-    background-color: black;
-    position: absolute;
-    z-index: 0;
-    top: -100%;
-    overflow: hidden;
-}
+
 
 .logo a {
     text-decoration: none;
@@ -117,13 +110,14 @@
     padding: 40px 0px 0px 40px;
 }
 
-.hidden-box-div {
+.hidden-box-div, .hidden-box-div2 {
     height: 100vh;
     background-color: black;
     position: absolute;
     z-index: 0;
     top: -100%;
     transition: top 0.9s ease; /* Add transition for smoothness */
+    overflow: hidden;
 }
 
 .nav-dw {
@@ -250,4 +244,8 @@
     color: #ffffff;
     margin-bottom: 8px;
 }
-
+@media(max-width:495px) {
+    .hero-nav{
+        padding: 30px 0px 0px 25px;
+    }
+}
