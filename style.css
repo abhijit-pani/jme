@@ -99,6 +99,7 @@
     position: absolute;
     z-index: 0;
     top: -100%;
+    overflow: hidden;
 }
 
 .logo a {
