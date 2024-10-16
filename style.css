@@ -112,7 +112,7 @@
 
 .hidden-box-div, .hidden-box-div2 {
     height: 100vh;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     z-index: 0;
     top: -100%;
