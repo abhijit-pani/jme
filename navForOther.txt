@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boilerplate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="hidden-box">
+        <div id="hide-box" class="container-fluid hidden-box-div">
+            <p style="color: #fff;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed architecto consequuntur excepturi quidem suscipit tempora molestiae quisquam delectus inventore deleniti sint laboriosam error quo in, ducimus quasi dolorem iste sequi quae. Animi deserunt at eveniet, quam molestiae dignissimos laborum, obcaecati repellat eum repudiandae accusantium labore neque iste beatae nobis nemo voluptatibus ex facilis nam quaerat aliquam odio nesciunt quas saepe. Dicta officiis excepturi, nobis explicabo accusantium voluptatum ut aliquam dolorum, deserunt itaque, aliquid ratione. Quam, sapiente iste commodi eum, quos ullam id minus earum quo at deserunt laboriosam nostrum corporis voluptates vitae molestias odit quae expedita consequuntur quia officia, voluptatum quis impedit modi. Sequi, ex ipsa? Iusto fugit necessitatibus quaerat ex quod sequi rerum, earum quidem molestiae. Error omnis assumenda porro cupiditate explicabo iure cum nam quas enim adipisci, ipsa distinctio similique accusantium provident, obcaecati nesciunt facilis? Corrupti rerum ratione harum quas pariatur tempore nemo, aperiam doloribus nisi vel nobis magnam dolorum non, veritatis nihil eaque, voluptate voluptates quae quasi? Corporis voluptatum, deserunt labore amet incidunt necessitatibus perspiciatis autem beatae consectetur pariatur. Consequuntur illum facilis minima cupiditate quisquam quae voluptatibus molestiae ad nihil dolores! Voluptas iusto nam quae dolor autem enim, aut eligendi quia ipsa numquam, est quis aliquam, labore officia adipisci architecto ducimus vero esse eveniet sit ea animi? Nesciunt eius error necessitatibus quod tempore culpa odit expedita ipsum nemo dolor! Excepturi sequi neque eius alias maxime, enim culpa.</p>
+        </div>
+        <div id="hide-box2" class="container-fluid hidden-box-div2 d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="" style="width: 50%;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptas. Illum doloribus iure ex saepe excepturi dolorum et? Nostrum facere quasi veritatis unde laborum blanditiis voluptate beatae ipsa repudiandae, quod assumenda explicabo quidem excepturi incidunt. Quisquam quae beatae accusantium, sint porro repudiandae illo, eos sunt aliquid eligendi veritatis blanditiis, corporis pariatur. Fugiat, eius accusamus nostrum quas dolorum hic minus velit ducimus numquam error ab vero placeat in laudantium nemo quam quibusdam corrupti magni, molestias earum? Aspernatur delectus molestias facere reiciendis eaque quas vel quo, voluptatem recusandae error debitis impedit eos repellendus, ducimus id ad placeat. Eum, quo eligendi. Ad nemo assumenda distinctio illum explicabo deserunt cumque veritatis, consequatur cupiditate officia nostrum possimus vitae? Sapiente, necessitatibus nam. Quod asperiores, architecto distinctio perspiciatis dignissimos pariatur debitis sed quo voluptatibus possimus porro minus sapiente? Alias totam sed sapiente obcaecati praesentium deserunt dolorum at quas debitis consequuntur, adipisci eligendi, in vel vitae. Ut, dolorem!
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="container-fluid hero-div">
+            <div class="hero-div-body">
+                <video autoplay loop muted plays-inline class="back-video">
+                    <source src="assets/video/bg1.mp4" type="video/mp4">
+                </video>
+                <div class="hero-nav d-flex justify-content-between">
+                    <div class="logo">
+                        <a href="#" class="text-center">JAY MAHAVEER<br>ENGINEERS</a>
+                    </div>
+                    <div class="own-nav-items">
+                        <div class="d-flex">
+                            <div class="ac-btn active">
+                                <button class="btn1" onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button class="btn1" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button>
+                            </div>
+                            <div class="ac-btn hidden">
+                                <button class="btn1 hidden rightt" onclick="closeNav()">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="down-bar">
+                    <div class="scroll-down">
+                        <a href="#" class="btnn scrl-btn">SCROLL DOWN</a>
+                    </div>
+                </div>
+                <div class="up-bar">
+                    <div class="scroll-up">
+                        <a href="" class="btnn"><i class="fa-solid fa-chevron-up"></i></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openNav() {
+            const hideNav = document.getElementById("hide-box");
+            hideNav.classList.add("nav-dw"); // Adds the nav-dw class
+            
+            // Toggle button states
+            const activeBtn = document.querySelector('.ac-btn.active');
+            const hiddenBtn = document.querySelector('.ac-btn.hidden');
+
+            // Swap button classes
+            activeBtn.classList.remove('active');
+            activeBtn.classList.add('hidden');
+
+            hiddenBtn.classList.remove('hidden');
+            hiddenBtn.classList.add('active');
+        }
+        function openSearch(){
+            const searchBox = document.getElementById("hide-box2");
+            searchBox.classList.add("nav-dw"); // Adds the nav-dw class
+            
+            // Toggle button states
+            const activeBtn = document.querySelector('.ac-btn.active');
+            const hiddenBtn = document.querySelector('.ac-btn.hidden');
+
+            // Swap button classes
+            activeBtn.classList.remove('active');
+            activeBtn.classList.add('hidden');
+
+            hiddenBtn.classList.remove('hidden');
+            hiddenBtn.classList.add('active');
+        }
+        function closeNav() {
+            const hideNav = document.getElementById("hide-box");
+            const hideNav2 = document.getElementById("hide-box2");
+            hideNav.classList.remove("nav-dw"); // Removes the nav-dw class to slide it up
+            hideNav2.classList.remove("nav-dw"); // Removes the nav-dw class to slide it up
+
+            // Toggle button states
+            const activeBtn = document.querySelector('.ac-btn.active');
+            const hiddenBtn = document.querySelector('.ac-btn.hidden');
+
+            // Swap button classes back
+            activeBtn.classList.remove('active');
+            activeBtn.classList.add('hidden');
+
+            hiddenBtn.classList.remove('hidden');
+            hiddenBtn.classList.add('active');
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/760b2a4ec2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
