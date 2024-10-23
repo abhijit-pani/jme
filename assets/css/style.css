@@ -270,10 +270,12 @@
 .heading-text h1{
     color: black;
     letter-spacing: 4px;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 300;
+    
 }
-.project-box{
-    height: 400px;
-    background-size: cover;
-    background-position: center center;
-    background-image: url("/assets/images/bg_2.jpg.webp");
+.project-box {
+    height: 400px; /* Sets the height of the box */
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center center; /* Centers the image within the element */
 }
