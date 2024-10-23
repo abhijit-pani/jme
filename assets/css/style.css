@@ -96,6 +96,7 @@
         object-fit: cover; /* Covers the entire area while maintaining aspect ratio */
         object-position: center; /* Centers the video */    
 }
+
 .hero-nav{
     z-index: 3;
     padding: 40px 0px 0px 40px;
@@ -376,7 +377,11 @@
     -webkit-perspective: 1000px;
             perspective: 1000px;
 }
-
+.bttn{
+    font-family: "Albert Sans", sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 300 !important;
+}
 .card-front,
 .card-back {
     background-size: cover;
@@ -483,6 +488,7 @@
     font-size: 2rem;
     margin-bottom: 2rem;
     position: relative;
+    letter-spacing: 2px;
 }
 
 .card-front .card-content p::after {
@@ -522,3 +528,14 @@
         margin: 0 0 2rem 0;
     }
 }
+.services-text ul li{
+    font-size: 20px;
+    color: #5a5a5a;
+}
+.video-size{
+    height: 280px !important;
+    border-radius: 10px;
+}
+/* .card-back{
+    position: relative;
+} */
