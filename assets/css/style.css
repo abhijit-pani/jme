@@ -123,7 +123,7 @@
     background-color: rgb(0, 0, 0);
     position: absolute;
     z-index: 0;
-    top: -100%;
+    top: -120%;
     transition: top 0.9s ease; /* Add transition for smoothness */
     overflow: hidden;
 }
@@ -149,7 +149,7 @@
     /* animation-fill-mode: forwards; */
 }
 @keyframes nav-down{
-    0% {top: -100%;}
+    0% {top: -120%;}
     100%{
         top:0%;
     }
@@ -541,7 +541,7 @@
     position: relative;
 } */
  .footer-div{
-    background-color: #000000;
+    background-color: #111111;
     padding: 50px;
  }
  .footer-sub-head{
@@ -574,7 +574,7 @@
     padding-bottom: 3px;
  }
  .email{
-    width: fit-content;
+    /* width: fit-content; */
     height: 50px;
     background-color: white;
     border-radius: 15px;
@@ -590,7 +590,7 @@
    
  }
  .email input{
-    width: 250px;
+    width: 100%;
     color: #000;
     background-color: transparent;
     outline: none;
@@ -624,7 +624,7 @@
     margin: 0px 10px;
  }
  
- .social-icon ul li a{
+ .social-icon ul li a {
     text-decoration: none;
     /* border-radius: 50%; */
     background-color: #fdbe34;
@@ -632,7 +632,23 @@
     height: 35px;
     width: 35px;
     border-radius: 50%;
- }
+    transition: .4s;
+  }
+  .social-icon ul :nth-child(1) a:hover {
+    background-color: #0866ff;
+  }
+  .social-icon ul :nth-child(2) a:hover {
+    background-color: #d54c3f;
+  }
+  .social-icon ul :nth-child(3) a:hover {
+    background-color: #000;
+  }
+  .social-icon ul :nth-child(4) a:hover {
+    background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+  }
  .social-icon ul li a i{
     margin: auto;
     color: white;
