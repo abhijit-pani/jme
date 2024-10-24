@@ -269,7 +269,7 @@
     width: 100%;
 }
 .heading-text h1{
-    color: black;
+    color: #444;
     letter-spacing: 4px;
     font-family: "Albert Sans", sans-serif;
     font-weight: 300;
@@ -485,7 +485,7 @@
 }
 
 .card-front .card-content p {
-    font-size: 2rem;
+    font-size: 25px;
     margin-bottom: 2rem;
     position: relative;
     letter-spacing: 2px;
@@ -531,6 +531,7 @@
 .services-text ul li{
     font-size: 20px;
     color: #5a5a5a;
+    text-transform: capitalize;
 }
 .video-size{
     height: 280px !important;
