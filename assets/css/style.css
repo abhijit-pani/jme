@@ -703,7 +703,7 @@
 }
 
 .bn54 {
-  color: #fdbe34;
+  color: #1f1f1f;
   position: relative;
   text-decoration: none;
   border-radius: 50px;
@@ -720,6 +720,7 @@
   outline: none !important;
   transition: 0.3s;
   font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
 
 }
 .bn54:hover {
@@ -727,4 +728,7 @@
 }
 .btn {
   outline: none !important;
+}
+.contact-wrap .formc input::placeholder{
+    color:#c2c2c2;
 }
