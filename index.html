@@ -19,6 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -289,7 +290,7 @@
     <section id="contact" class="contact-wrap" style="background-image: url('/assets/images/contact-bg.jpg');">
         <div class="container">
             <div class="row">
-                <div data-aos="" class="col-md-6 newsletter aos-init aos-animate">
+                <div data-aos="zoom-in-up" class="col-md-6 newsletter aos-init aos-animate">
                     <div class="">
                         <h2 class="text-white">Your Dream Space Awaits,<br> Lets Build Your Future Together.</h2>
                         <h1 class="text-white">
@@ -532,7 +533,11 @@
             hiddenBtn.classList.remove('hidden');
             hiddenBtn.classList.add('active');
         }
-    </script>
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     <script>
         let currentSlideIndex = 0;
         const slides = document.querySelectorAll('.custom-carousel-slide');
