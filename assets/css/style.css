@@ -51,12 +51,11 @@
   justify-content: space-between;
 }
 .ac-btn .btn1 :hover .n-icon {
-  transition: 0.2s;
   cursor: pointer;
 }
 /* Default image styling */
 .n-icon {
-  transition: filter 0.3s ease; /* Smooth transition for the hover effect */
+  transition: filter 0s ease; /* Smooth transition for the hover effect */
 }
 
 /* Hover effect to deepen color */
