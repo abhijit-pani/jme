@@ -1,78 +1,173 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Button Toggle Animation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Quarter-Circle Navbar with Logo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background-color: #121212; /* Dark theme background */
+        }
+        
+        /* Navbar container */
+        .hero-nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: 20px 40px;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo styling */
+        .logo a {
+            text-decoration: none;
+            font-size: 25px;
+            font-family: "Albert Sans", sans-serif;
+            font-weight: 800;
+            color: #fff;
+            line-height: 23px;
+        }
+
+        /* Button styling */
         .btn1 {
-            border: none;
             background-color: transparent;
+            border: none;
             outline: none;
-            top: 50px;
-            right: 10px;
-            /* transition: transform 1s ease, opacity 1s; */
-        }
-
-        .ac-btn {
-            transition: transform 1s ease, opacity 1s;
-        }
-
-        .ac-btn.active {
-            transform: translate(-50px, 0px) scale(0.7);
-            /* Moves left and up */
-            position: absolute;
-            /* Moves left and up */
-        }
-
-        .ac-btn.hidden {
-            opacity: 0;
-            transform: translate(-20px, -30px) scale(0.3);
-            /* Moves right and down */
-            /* Moves right and down */
-        }
-
-        .btn1 i {
-            font-size: 40px;
-        }
-        .rightt{
-            position: relative;
-            right: -20px;
-            top: -10px;
+            color: white;
             font-size: 30px;
+            cursor: pointer;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        /* Animation for the buttons */
+        .icon {
+            display: inline-block;
+            transition: transform 0.5s ease;
+        }
+
+        .minimize {
+            transform: scale(0); /* Minimize effect */
+        }
+
+        .maximize {
+            transform: scale(1); /* Maximize effect */
+        }
+
+        /* Quarter-circle menu */
+        .quarter-circle-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            border-radius: 0 0 0 300px;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 30px;
+            transform: scale(0);
+            transform-origin: top right;
+            transition: transform 0.5s;
+            z-index: 5;
+        }
+
+        .quarter-circle-menu.show {
+            transform: scale(1);
+        }
+
+        .menu-item {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .menu-item:hover {
+            color: #f5c242;
+        }
+
+        /* Close button styling */
+        .close-btn {
+            align-self: flex-end; /* Align close button to the top right */
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            margin: 20px; /* Space around the close button */
         }
     </style>
 </head>
-
 <body>
-    <div class="row">
-        <div class="col-8"></div>
-        <div class="col-4">
-            <div class="d-flex">
-                <div class="ac-btn active">
-                    <button class="btn1"><i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i></button>
-                    <button class="btn1"><i class="fa-solid fa-bars-staggered" style="color: #74C0FC;"></i></button>
-                </div>
-                <div class="ac-btn hidden">
-                    <button class="btn hidden rightt">CLOSE</button>
-                </div>
-            </div>
+    <div class="hero-nav">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="#" class="text-center">JAY MAHAVEER<br>ENGINEERS</a>
         </div>
+        <!-- Navbar Toggle Button -->
+        <button class="btn1" id="nav-toggle">
+            <span class="icon" id="menu-icon" style="display: inline-block;">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <span class="icon" id="close-icon" style="display: none;">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </button>
+    </div>
+
+    <!-- Quarter-Circle Menu -->
+    <div class="quarter-circle-menu" id="quarter-circle-menu">
+        <a href="#" class="menu-item">HOME</a>
+        <a href="#" class="menu-item">ABOUT</a>
+        <a href="#" class="menu-item">CONTACT</a>
+        <a href="#" class="menu-item">SERVICES</a>
     </div>
 
     <script src="https://kit.fontawesome.com/760b2a4ec2.js" crossorigin="anonymous"></script>
     <script>
-        const buttons = document.querySelectorAll('.ac-btn');
+        // Toggle menu visibility
+        const navToggle = document.getElementById('nav-toggle');
+        const quarterCircleMenu = document.getElementById('quarter-circle-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
 
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                buttons.forEach(btn => btn.classList.toggle('active'));
-                buttons.forEach(btn => btn.classList.toggle('hidden'));
-            });
+        // Show/Hide menu on toggle button click
+        navToggle.addEventListener('click', () => {
+            quarterCircleMenu.classList.toggle('show');
+
+            if (quarterCircleMenu.classList.contains('show')) {
+                // Minimize the menu icon
+                menuIcon.classList.add('minimize');
+                menuIcon.style.display = 'none'; // Hide immediately
+                closeIcon.style.display = 'inline-block'; // Show close icon
+                closeIcon.classList.add('maximize'); // Maximize the close icon
+            } else {
+                // Maximize the menu icon
+                closeIcon.classList.remove('maximize'); // Hide close icon
+                closeIcon.style.display = 'none'; // Hide close icon
+                menuIcon.style.display = 'inline-block'; // Show menu icon
+                menuIcon.classList.remove('minimize'); // Maximize the menu icon
+            }
+        });
+
+        // Close menu on close button click
+        document.getElementById('close-btn').addEventListener('click', () => {
+            quarterCircleMenu.classList.remove('show');
+            closeIcon.classList.remove('maximize'); // Hide close icon
+            closeIcon.style.display = 'none'; // Hide close icon
+            menuIcon.style.display = 'inline-block'; // Show menu icon
+            menuIcon.classList.remove('minimize'); // Maximize the menu icon
         });
     </script>
 </body>
-
 </html>

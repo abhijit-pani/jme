@@ -50,10 +50,18 @@
   display: flex;
   justify-content: space-between;
 }
-.ac-btn .btn1 :hover {
-  color: #c2c2c2;
+.ac-btn .btn1 :hover .n-icon {
   transition: 0.2s;
   cursor: pointer;
+}
+/* Default image styling */
+.n-icon {
+  transition: filter 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+/* Hover effect to deepen color */
+.btn1:hover .n-icon {
+  filter: brightness(0.7); /* Adjust to make it look deeper, or increase saturation */
 }
 
 .ac-btn.active {
@@ -731,4 +739,30 @@
 }
 .contact-wrap .formc input::placeholder{
     color:#c2c2c2;
+}
+.nav-tab-btn ul li{
+  list-style: none;
+}
+.nav-tab-btn ul li .n-number{
+  position: relative;
+  color: white;
+  top: -25px;
+
+}
+.nav-tab-btn ul li span a{
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+}
+
+.nav-tab-btn ul li:hover span,
+.nav-tab-btn ul li:hover span a
+{
+
+  color:red;
+}
+.nav-tab-btn{
+  height: fit-content;
+  width: fit-content;
 }

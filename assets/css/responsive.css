@@ -11,12 +11,16 @@
  
  /* -------------- Tablet------------------ */
  @media(min-width:992px) and (max-width:1023px) {
-
+    .nav-tab-btn ul li span a{
+        font-size: 45px;
+      }
  
  }
  
  @media(min-width:769px) and (max-width:991px) {
- 
+    .nav-tab-btn ul li span a{
+        font-size: 35px;
+      }
  }
  
  /* ********************************************************************************************************************** */
@@ -26,6 +30,9 @@
     .footer-div{
         padding: 30px;
     }
+    .nav-tab-btn ul li span a{
+        font-size: 33px;
+      }
     
  }
  @media(min-width:601px){
@@ -98,4 +105,7 @@
     .btnn{
         padding: 5px 10px;
     }
+    .nav-tab-btn ul li span a{
+        font-size: 30px;
+      }
  }
