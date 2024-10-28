@@ -73,10 +73,12 @@
   /* Moves left and up */
   position: absolute;
   /* Moves left and up */
+  visibility: visible;
 }
 
 .ac-btn.hidden {
-  opacity: 0;
+  /* opacity: 0; */
+  visibility: hidden;
   transform: translate(-20px, -30px) scale(0.3);
   /* Moves right and down */
   /* Moves right and down */
