@@ -784,6 +784,82 @@
 }
 .hero-bg-size{
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
+/* ----------------------------------------ABOUT START------------------------------------------------------- */
+  .about-body-div{
+    height: 50vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: end;
+  }
+  .about-body-div .abd-content .abd-text{
+    /* font-size: 70px; */
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Barlow",sans-serif;
+    /* margin-top: 0px; */
+    font-style: normal;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+    font-size: 140px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .about-body-div .abd-content .abd-text2{
+    /* font-size: 70px; */
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Barlow",sans-serif;
+    /* margin-top: 0px; */
+    font-style: normal;
+    font-size: 140px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fdbe34;
+    animation: animate 4s ease-in-out infinite;
+  }
+  @keyframes animate{
+    0%, 100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 69%, 100% 52%, 100% 100%, 0% 100%);
+  }
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+  
+  }
+  .breadcrumb-item, .breadcrumb-item a{
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 20px;
+  font-family: "Albert Sans", sans-serif;
+  }
+  .breadcrumb-item a:hover{
+    text-decoration: underline;
+  }
+  .breadcrumb-item+.breadcrumb-item::before{
+    color: white !important;
+  }
+  .breadcrumb-before{
+    position: relative;
+    left: 250px;
+  }
+  .breadcrumb-before::before{
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 18px;
+    right: 160px;
+  }
+
+
+
+/* ----------------------------------------ABOUT END------------------------------------------------------- */

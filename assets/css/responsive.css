@@ -108,4 +108,28 @@
     .nav-tab-btn ul li span a{
         font-size: 30px;
       }
+      .about-body-div .abd-content .abd-text{
+        font-size: 73px;
+      
+      }
+      .about-body-div .abd-content .abd-text2{
+        font-size: 73px;
+      }
+      .breadcrumb-item, .breadcrumb-item a{
+        font-size: 13px;
+      }
+      .breadcrumb-before::before{
+        content: "";
+        height: 3px;
+        width: 140px;
+        background-color: white;
+        position: absolute;
+        top: 11px;
+        right: 124px;
+      }
+      .width240
+      {
+        width: 160px;
+      }
+    
  }
