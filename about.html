@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,24 +70,24 @@
                     <div class="own-nav-items">
                         <div class="d-flex">
                             <div class="ac-btn active">
-                                <button class="btn1 btn2" onclick="openSearch()"><img class="n-icon" src="assets/icon/search.png" alt="" height="36" width="56"></button>
-                                <button class="btn1" onclick="openNav()"><img class="n-icon" src="assets/icon/menu.png" alt="" height="36" width="56"></button>
+                                <button class="btn1 btn2" onclick="openSearch();hideText()"><img class="n-icon" src="assets/icon/search.png" alt="" height="36" width="56"></button>
+                                <button class="btn1" onclick="openNav();hideText()"><img class="n-icon" src="assets/icon/menu.png" alt="" height="36" width="56"></button>
                                 <!-- <button class="btn1" onclick="openNav()"><i
                                         class="fa-solid fa-bars-staggered"></i></button> -->
                             </div>
                             <div class="ac-btn hidden">
-                                <button class="btn1 hidden rightt" onclick="closeNav()">CLOSE</button>
+                                <button class="btn1 hidden rightt" onclick="closeNav();unhideText()">CLOSE</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-body-div">
+                <div class="about-body-div content-hide">
                     <div class="abd-content">
                         <h1 class="abd-text" style="position: absolute;">ABOUT US</h1>
                         <h1 class="abd-text2">ABOUT US</h1>
                     </div>
                 </div>
-                <div class="breadcrumb-container d-flex">
+                <div class="breadcrumb-container d-flex content-hide">
                     <div class="width240 d-none d-md-block d-lg-block"></div>
                     <nav aria-label="breadcrumb" class="breadcrumb-before">
                         <ol class="breadcrumb">
@@ -108,6 +107,42 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container-fluid about-us-div width-set d-flex align-items-center">
+            <div class="about-us-div-body row">
+                <div class="about-us-left col-lg-6 col-md-6 col-sm-12 ">
+                    
+                    <div class="about-us-content" style="float: right;">
+                        <div class="about-head-element">
+                            <h3 class="aboutUs aboutTitle">About Us</h3>
+                        </div>
+                        <!-- <div class="about-head-name">
+                            <h2>Jay Mahaveer Engineers</h2>                           
+                        </div> -->
+                        <div class="about-head">
+                            <h2 class="a-h w-60">
+                                We Are a Leading Engineering Company Delivering Excellence and Innovation
+                            </h2>
+                        </div>
+                        <div class="about-head">
+                            <p class="a-d">
+                                We are proud to introduce Jay Mahaveer Engineers, a leading name in the engineering and construction sector based in Odisha. Within a short span, Jay Mahaveer Engineers has achieved significant success in delivering innovative and high-quality solutions.
+                            </p>
+                            <p class="a-d">
+                                Our expertise spans across [specific services, e.g., civil construction, pipeline fabrication, structural engineering, etc.]. We are committed to providing international standard services at highly competitive prices, ensuring customer satisfaction and excellence in every project we undertake.
+                            </p>
+                        </div>
+                        <div class="serviceButtonElementor">
+                            <a href="#" class="serviceButton">Our Services</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+               
+            </div>    
         </div>
     </section>
    
@@ -240,7 +275,7 @@
                                     <a href="#">About</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contact</a>
+                                    <a href="contact.html">About</a>
                                 </li>
                                 <li>
                                     <a href="#">Privacy Policy</a>
@@ -313,6 +348,22 @@
             hiddenBtn.classList.add('active');
         }
         </script>
+        
+    <script>
+        function hideText() {
+            const textElements = document.getElementsByClassName('content-hide');
+            for (const element of textElements) {
+                element.classList.add('c-hide');
+            }
+        }
+
+        function unhideText() {
+            const textElements = document.getElementsByClassName('content-hide');
+            for (const element of textElements) {
+                element.classList.remove('c-hide');
+            }
+        }
+    </script>
   
     <script src="https://kit.fontawesome.com/760b2a4ec2.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
