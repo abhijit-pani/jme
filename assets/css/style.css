@@ -45,15 +45,10 @@
 }
 .logo {
   position: relative;
+  
 }
-.logo a {
-  text-decoration: none;
-  font-size: 25px;
-  font-family: "Albert Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  color: #fff;
+.logo a .logo-img{
+  width: 300px;
 }
 
 .ac-btn {
@@ -61,6 +56,10 @@
   width: 118px !important;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: 55px;
+  right: 5px;
+  
 }
 .ac-btn .btn1 :hover .n-icon {
   cursor: pointer;
@@ -123,7 +122,7 @@
 
 .hero-nav {
   z-index: 3;
-  padding: 40px 0px 0px 40px;
+  padding: 0px 40px;
 }
 
 .logo a {
@@ -137,7 +136,7 @@
 
 .hero-nav {
   z-index: 3;
-  padding: 40px 0px 0px 40px;
+  /* padding: 40px 0px 0px 40px; */
 }
 
 .hidden-box-div,
@@ -273,7 +272,7 @@
 }
 @media (max-width: 495px) {
   .hero-nav {
-    padding: 20px 0px 0px 8px;
+    /* padding: 20px 0px 0px 8px; */
   }
   .ac-btn.active {
     transform: translate(0px, 0px) scale(0.7);
@@ -792,6 +791,11 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+.bg-size {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 /* ----------------------------------------ABOUT START------------------------------------------------------- */
 .about-body-div {
   height: 50vh;
@@ -889,10 +893,11 @@
   transition: 0.2s;
 }
 .about-us-div{
-  padding: 80px 0px;
+  padding: 75px 0px;
 }
 .about-us-content{
   width: 90%;
+  height: 100%;
   
 }
 .aboutTitle {
@@ -917,13 +922,59 @@
 
 }
 .serviceButtonElementor .serviceButton{
-  padding: 15px 45px;
+  padding: 10px 45px;
   font-size: 15px;
   text-decoration: none;
   color: var(--aboutHeadingText);
   background-color: #ffc03d;
-  border-radius: 4px;
+  border-radius: 2px;
+  transition: .3s;
 }
+.serviceButtonElementor .serviceButton:hover{
+  background-color: #eba714;
+}
+.container-width-set{
+  width: 70%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.sustainability-elementor{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #0866ff; */
+  background-image: url("../images/image-1-min.jpg");
+  position: relative;
+  }
+.sustainability-elementor2{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/image-2-min.jpg");
+  position: relative;
+  }
+.sustainability-elementor::after{
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(33, 45, 69, .8); 
+  }
+.sustainability-elementor2::after{
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(255, 192, 61, .8); 
+  }
 
 
 /* ----------------------------------------ABOUT END------------------------------------------------------- */
