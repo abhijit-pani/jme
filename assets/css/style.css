@@ -24,12 +24,29 @@
   margin: 0;
   width: 100%; /* Makes sure it doesn’t exceed the viewport width */
   box-sizing: border-box; /* Includes padding in width calculation */
-}
-
-.hero-div {
   height: 100vh;
 }
-
+.hero-div-other{
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Makes sure it doesn’t exceed the viewport width */
+  box-sizing: border-box; /* Includes padding in width calculation */
+  height: 80vh;
+  position: relative;
+}
+.hero-div-other::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  }
+  /* .hero-div-other-body{
+    position: relative;
+    z-index: 1;
+  } */
 .btn1 {
   border: none;
   background-color: transparent;
@@ -135,7 +152,8 @@
 }
 
 .hero-nav {
-  z-index: 3;
+  position: relative;
+  z-index: 10;
   /* padding: 40px 0px 0px 40px; */
 }
 
@@ -144,7 +162,7 @@
   height: 100vh;
   background-color: rgb(0, 0, 0);
   position: absolute;
-  z-index: 0;
+  z-index: 5;
   top: -120%;
   transition: top 0.9s ease; /* Add transition for smoothness */
   overflow: hidden;
@@ -1044,3 +1062,11 @@ width:150px;
 padding:10px;
 }
 /* ----------------------------------------ABOUT END------------------------------------------------------- */
+
+/* --------------------------------------SERVICES START---------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------SERVICES END------------------------------------------------------- */
