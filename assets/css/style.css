@@ -922,7 +922,7 @@
 
 }
 .serviceButtonElementor .serviceButton{
-  padding: 10px 45px;
+  padding: 12px 45px;
   font-size: 15px;
   text-decoration: none;
   color: var(--aboutHeadingText);
@@ -975,6 +975,72 @@
   position: absolute;
   background-color: rgba(255, 192, 61, .8); 
   }
-
-
+  .elementor-icon-list-items{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+.elementor-icon-list-items .elementor-icon-list-item{
+  
+  height: auto;
+  list-style: none;
+  padding: 5px 0px;
+}
+.elementor-icon-list-items .elementor-icon-list-item .elementor-icon-list-icon, .elementor-icon-list-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: #212d45;
+}
+.elementor-icon-list-items .elementor-icon-list-item .elementor-icon-list-text{
+  padding-left: 10px;
+  margin: auto 0px;
+}
+.ourClient-div{
+  padding: 80px 0px;
+}
+#ourclients {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom:30px;
+  height:150px;
+}
+#ourclients .clients-wrap {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#ourclients .clients-wrap ul {
+  display: block;
+  list-style: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 103px;
+  overflow: hidden;
+}
+#ourclients .clients-wrap ul li {
+  display: block;
+  float: left;
+  position: relative;
+  width: 220px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#ourclients .clients-wrap ul li img {
+  vertical-align: middle;
+  max-width: 100%;
+  width:150px;
+  max-height: 100%;
+  -webkit-transition: 0 linear left;
+  -moz-transition: 0 linear left;
+  transition: 0 linear left;
+}
+#ourclients h3{
+border-bottom:2px solid #3399ff;
+width:150px;
+padding:10px;
+}
 /* ----------------------------------------ABOUT END------------------------------------------------------- */

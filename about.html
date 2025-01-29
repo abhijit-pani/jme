@@ -25,6 +25,8 @@
 </head>
 
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <section class="hidden-box">
         <div id="hide-box" class="container-fluid hidden-box-div d-flex justify-content-center align-items-center">
            <div class="nav-tab-btn">
@@ -175,12 +177,92 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 sustainability-elementor2 p-0 m-0 bg-size">
                     <div class="container-width-set">
-                        <p>Le laboriosam minima ex blanditiis quod libero. Itaque eos aliquam, explicabo eligendi atque quam dolorem, debitis alias, possimus aspernatur nam hic tempora voluptates incidunt blanditiis? Aliquid mollitia voluptate tempore! Quam quia fuga, maiores ducimus debitis corporis porro minima. Voluptatibus impedit deserunt cupiditate quod. Ad explicabo neque quidem. Quos ad culpa non facere sapiente nesciunt error incidunt ab quia minima impedit magnam iste, ullam saepe deserunt animi beatae sunt eos illo doloribus quis amet praesentium! Vel magni placeat provident sapiente neque ut itaque at, corrupti pariatur quo unde eveniet eligendi, ipsum labore blanditiis repellendus repellat quis, soluta beatae nihil voluptas voluptatem. Quas labore debitis eveniet cumque deserunt ex optio aut inventore nam recusandae velit dolor, obcaecati non fugiat, facere tempora expedita doloremque, ipsa sit nihil nesciunt. Omnis facilis itaque vel labore, incidunt sit, nobis sapiente consequuntur voluptatem voluptatum iusto ad iste accusamus cumque velit consequatur, blanditiis unde. Quas ea, repudiandae aliquam nesciunt, animi sequi unde autem, magni rerum quae doloremque dignissimos vel ad totam. Accusamus quas cumque sapiente unde velit placeat quibusdam fugit! Ut, non repellendus. Quaerat ex provident expedita animi beatae unde, perspiciatis repudiandae incidunt sequi sapiente eaque sint libero officiis vitae voluptate delectus harum facere eius ab recusandae. In doloremque, ullam maiores, ea earum cupiditate sit placeat necessitatibus at nisi quibusdam rerum asperiores eius incidunt quis vitae pariatur sequi commodi optio. Assumenda vitae adipisci voluptatibus alias minus voluptatem iure! Voluptates blanditiis sapiente nihil deserunt quaerat fugit id tenetur aperiam, iusto modi architecto laboriosam ratione amet distinctio consequatur consectetur at provident odit! Reprehenderit, magnam in!</p>
+                        <h4 class="aboutTitle" style="color: #212d45;">We Follow Best Practices</h4>
+                        <div class="about-head pb-5">
+                            <p class="a-d" style="color: #212d45;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. 						
+                            </p>
+                           </div>
+                           <div class="elementor-widget-container">
+                            <ul class="elementor-icon-list-items">
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <i class="fa-solid fa-recycle"></i>
+                                    </span>
+                                    <span class="elementor-icon-list-text">
+                                        Sustainablility
+                                    </span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </span>
+                                    <span class="elementor-icon-list-text">
+                                        Project On Time
+                                    </span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                       <i class="fa-solid fa-desktop"></i>
+                                    </span>
+                                    <span class="elementor-icon-list-text">
+                                        Modern Technology
+                                    </span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <i class="fa-solid fa-pen-ruler"></i>
+                                    </span>
+                                    <span class="elementor-icon-list-text">
+                                        Latest Designs
+                                    </span>
+                                </li>
+                            </ul>
+                           </div>
+
                     </div>
-                </div>
-                
+                </div>                               
             </div>
         </div>
+    </section>
+    <section class="ourClient">
+        <div class="container ourClient-div">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-head-element">
+                        <h3 class="aboutUs aboutTitle text-center">Trust and Worth</h3>
+                    </div>
+                    <div class="about-head">
+                        <h2 class="a-h text-center" style="color: #212d45;">Our Clients</h2>
+                    </div>
+                    <div id="ourclients">
+                        <div class="clients-wrap">
+                          <ul id="clientlogo" class="clearfix">
+                            <li>
+                              <img src="assets/images/evos.jpg" alt="Logo">
+                            </li>
+                            <li>
+                              <img src="assets/images/alumaxgroup.jpg" alt="Logo">
+                            </li>
+                            <li>
+                              <img src="assets/images/nne.png" alt="Logo">
+                            </li>
+                            <li>
+                              <img src="assets/images/taj.png" alt="Logo">
+                            </li>
+                            <li>
+                              <img src="assets/images/swosti.jpg" alt="Logo">
+                            </li>
+                            <li>
+                              <img src="assets/images/odm.jpg" alt="Logo">
+                            </li>                                                       
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
    
@@ -401,6 +483,38 @@
                 element.classList.remove('c-hide');
             }
         }
+    </script>
+    <script>
+        $(function() {
+      var $clientslider = $('#clientlogo');
+      var clients = $clientslider.children().length;
+      var clientwidth = (clients * 220); 
+      $clientslider.css('width', clientwidth);
+      var rotating = true;
+      var clientspeed = 1800;
+      var seeclients = setInterval(rotateClients, clientspeed);
+      $(document).on({
+        mouseenter: function() {
+          rotating = false;
+        },
+        mouseleave: function() {
+          rotating = true;
+        }
+      }, '#ourclients');
+      function rotateClients() {
+        if (rotating != false) {
+          var $first = $('#clientlogo li:first');
+          $first.animate({
+            'margin-left': '-220px'
+          }, 2000, function() {
+            $first.remove().css({
+              'margin-left': '0px'
+            });
+            $('#clientlogo li:last').after($first);
+          });
+        }
+      }
+    });
     </script>
   
     <script src="https://kit.fontawesome.com/760b2a4ec2.js" crossorigin="anonymous"></script>
