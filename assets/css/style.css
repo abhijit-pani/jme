@@ -24,8 +24,10 @@
   margin: 0;
   width: 100%; /* Makes sure it doesn’t exceed the viewport width */
   box-sizing: border-box; /* Includes padding in width calculation */
+ }
+ .hero-div{
   height: 100vh;
-}
+ }
 .hero-div-other{
   padding: 0;
   margin: 0;
@@ -34,7 +36,7 @@
   height: 80vh;
   position: relative;
 }
-.hero-div-other::before{
+.hero-div-other::after{
   content: "";
   position: absolute;
   top: 0;
@@ -152,8 +154,7 @@
 }
 
 .hero-nav {
-  position: relative;
-  z-index: 10;
+  z-index: 3;
   /* padding: 40px 0px 0px 40px; */
 }
 
@@ -162,7 +163,7 @@
   height: 100vh;
   background-color: rgb(0, 0, 0);
   position: absolute;
-  z-index: 5;
+  z-index: 0;
   top: -120%;
   transition: top 0.9s ease; /* Add transition for smoothness */
   overflow: hidden;
