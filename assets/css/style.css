@@ -1072,3 +1072,34 @@ padding:10px;
 
 
 /* ---------------------------------------SERVICES END------------------------------------------------------- */
+
+
+
+
+
+/* --------------------------------------PROJECTS START---------------------------------------------------- */
+
+.projectGalleryContainer{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+.projectDetailsContainer{
+  background-color: transparent;
+  width: 100% !important;
+  padding:30px 25px;
+}
+.projectDetailsContainer .projectEntryText .projectEntryTextHeading{
+  font-size: 24px;
+  font-size: 1.6rem;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+  color: #fff;
+}
+.projectEntryTextLocation{
+  color: #fff;
+}
+
+/* ---------------------------------------PROJECTS END------------------------------------------------------- */
