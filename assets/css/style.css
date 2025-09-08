@@ -836,6 +836,27 @@
     transition: .3s;
     outline: none;
 }
+/* WhatsApp Floating Button */
+#whatsapp-chat {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+#whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
 /* ----------------------------------------ABOUT START------------------------------------------------------- */
 .about-body-div {
   height: 50vh;
