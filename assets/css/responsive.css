@@ -134,7 +134,7 @@
       .hero-nav{
         background-color: white;
         padding: 0;
-        height: 75px;
+        height: 60px;
         align-items: center;
       }
       .logo a .logo-img {
@@ -154,6 +154,9 @@
     }
     .ourClient-div {
     padding: 30px 0px;
+    }
+    .heading-text{
+      height: 95px !important;
     }
 
 /* ---------------------------------------------------------------------- */
