@@ -27,8 +27,6 @@
   margin: 0;
   width: 100%; /* Makes sure it doesn’t exceed the viewport width */
   box-sizing: border-box; /* Includes padding in width calculation */
-}
-.hero-div {
   height: 100vh;
 }
 .hero-div-other {
@@ -812,43 +810,6 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
-.ourClient-index {
-  background-image: url("../images/White-elegant-texture-background.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.ourClient-divIndex {
-  padding: 40px 0px;
-}
-.ourClientIndex {
-  background-color: white;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid black;
-}
-
-/* WhatsApp Floating Button */
-#whatsapp-chat {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 9999;
-}
-
-#whatsapp-button img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-#whatsapp-button img:hover {
-  transform: scale(1.1);
-}
-
 /* ----------------------------------------ABOUT START------------------------------------------------------- */
 .about-body-div {
   height: 50vh;
@@ -960,7 +921,21 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
-.elementorDiv .elementorButton {
+.about-head .a-h {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  padding-bottom: var(--titlePadding);
+  color: var(--aboutHeadingText);
+  font-weight: 700;
+}
+.about-head .a-d{
+  font-family: "Barlow", sans-serif;
+  margin-bottom: var(--aboutDiscriptionBottomMargin);
+  font-size: 15px;
+  color: var(--aboutDiscriptionColor);
+
+}
+.serviceButtonElementor .serviceButton{
   padding: 12px 45px;
   border: none;
   font-size: 15px;
@@ -1316,3 +1291,34 @@
 
 
 /* ------------------------------------CONTACT US END---------------------------------------------------------- */
+
+
+
+
+
+/* --------------------------------------PROJECTS START---------------------------------------------------- */
+
+.projectGalleryContainer{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+.projectDetailsContainer{
+  background-color: transparent;
+  width: 100% !important;
+  padding:30px 25px;
+}
+.projectDetailsContainer .projectEntryText .projectEntryTextHeading{
+  font-size: 24px;
+  font-size: 1.6rem;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+  color: #fff;
+}
+.projectEntryTextLocation{
+  color: #fff;
+}
+
+/* ---------------------------------------PROJECTS END------------------------------------------------------- */
