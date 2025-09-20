@@ -1,341 +1,530 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JME</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="js" href="assets/script/script.js">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <style>
-        .breadcrumb-before::before {
-            content: "";
-            height: 5px;
-            width: 200px;
-            background-color: white;
-            position: absolute;
-            top: 18px;
-            right: 216px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JME</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="js" href="assets/script/script.js" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <style>
+    .breadcrumb-before::before {
+      content: "";
+      height: 5px;
+      width: 200px;
+      background-color: white;
+      position: absolute;
+      top: 18px;
+      right: 216px;
+    }
+  </style>
 </head>
 
 <body>
-    <section class="hidden-box">
-        <div id="hide-box" class="container-fluid hidden-box-div d-flex justify-content-center align-items-center">
-            <div class="nav-tab-btn">
-                <ul class="" id="myTab" role="tablist">
-                    <li>
-                        <span class="n-number">01</span>
-                        <span class="n-name"><a href="index.html" class="n-name">HOME</a></span>
-                    </li>
-                    <li>
-                        <span class="n-number">02</span>
-                        <span class="n-name"><a href="about.html" class="n-name">ABOUT</a></span>
-                    </li>
-                    <li>
-                        <span class="n-number">03</span>
-                        <span class="n-name"><a href="services.html" class="n-name">SERVICES</a></span>
-                    </li>
-                    <li>
-                        <span class="n-number">04</span>
-                        <span class="n-name"><a href="projects.html" class="n-name">PROJECTS</a></span>
-                    </li>
-                    <li>
-                        <span class="n-number">05</span>
-                        <span class="n-name"><a href="contact.html" class="n-name">CONTACT</a></span>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-        <div id="hide-box2" class="container-fluid hidden-box-div2 d-flex justify-content-center align-items-center"
-            style="height: 100vh;">
-            <div class="" style="width: 50%;">
-                orem ipsum dolor sit amorum at quas debitis consequuntur, adipisci eligendi, in vel vitae. Ut, dolorem!
-            </div>
-        </div>
-    </section>
-    <section class="hero" id="herro">
-        <div class="container-fluid hero-div-other hero-bg-size" style="background-image: url('assets/images/kateniWarehouse.jpg');">
-            <div class="hero-div-other-body">
-                <div class="hero-nav d-flex justify-content-between">
-                    <div class="logo">
-                        <a href="index.html" class="text-center">JAY MAHAVEER<br>ENGINEERS</a>
-                    </div>
-                    <div class="own-nav-items">
-                        <div class="d-flex">
-                            <div class="ac-btn active">
-                                <button class="btn1 btn2" onclick="openSearch()"><img class="n-icon"
-                                        src="assets/icon/search.png" alt="" height="36" width="56"></button>
-                                <button class="btn1" onclick="openNav()"><img class="n-icon" src="assets/icon/menu.png"
-                                        alt="" height="36" width="56"></button>
+  <section class="hidden-box">
+    <div id="hide-box" class="container-fluid hidden-box-div d-flex justify-content-center align-items-center">
+      <div class="nav-tab-btn">
+        <ul id="myTab" role="tablist">
+          <li>
+            <span class="n-number">01</span>
+            <span class="n-name"><a href="index.html" class="n-name">HOME</a></span>
+          </li>
+          <li>
+            <span class="n-number">02</span>
+            <span class="n-name"><a href="about.html" class="n-name">ABOUT</a></span>
+          </li>
+          <li>
+            <span class="n-number">03</span>
+            <span class="n-name"><a href="services.html" class="n-name">SERVICES</a></span>
+          </li>
+          <li>
+            <span class="n-number">04</span>
+            <span class="n-name"><a href="projects.html" class="n-name">PROJECTS</a></span>
+          </li>
+          <li>
+            <span class="n-number">05</span>
+            <span class="n-name"><a href="contact.html" class="n-name">CONTACT</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="hide-box2" class="container-fluid hidden-box-div2 d-flex justify-content-center align-items-center"
+      style="height: 100vh">
+      <div style="width: 50%">
+        orem ipsum dolor sit amorum at quas debitis consequuntur, adipisci
+        eligendi, in vel vitae. Ut, dolorem!
+      </div>
+    </div>
+  </section>
+  <section class="hero" id="herro">
+    <div class="container-fluid hero-div-other hero-bg-size"
+      style="background-image: url('assets/images/kateniWarehouse.jpg')">
+      <div class="hero-div-other-body">
+        <div class="hero-nav d-flex justify-content-between">
+          <div class="logo">
+            <a href="index.html" class="text-center"><img class="logo-img" src="assets/images/logo.png" alt="" /></a>
+          </div>
+          <div class="own-nav-items">
+            <div class="d-flex">
+              <div class="ac-btn active">
+                                <button class="btn1 m1" onclick="openNav()">
+                                    <img class="n-icon" src="assets/icon/dmenu.png" alt="" height="36" width="56" />
+                                </button>
+                                <button class="btn1 m2" onclick="openNav()">
+                                    <img class="n-icon" src="assets/icon/mmenu.png" alt="" height="36" width="56" />
+                                </button>
                                 <!-- <button class="btn1" onclick="openNav()"><i
                                         class="fa-solid fa-bars-staggered"></i></button> -->
                             </div>
-                            <div class="ac-btn hidden">
-                                <button class="btn1 hidden rightt" onclick="closeNav()">CLOSE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-body-div">
-                    <div style="margin: auto;">
-                        <div class="abd-content">
-                            <h1 class="abd-text" style="position: absolute;">CONTACT US</h1>
-                            <h1 class="abd-text2">CONTACT US</h1>
-                        </div>
-                        <div class="breadcrumb-container d-flex">
-                           
-                            <nav aria-label="breadcrumb" class="breadcrumb-before">
-                                <ol class="breadcrumb">
-                                  <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
-                                  <li class="breadcrumb-item" aria-current="page">CONTACT US</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <div class="down-bar">
-                    <div class="scroll-down">
-                        <a href="#aboutt" class="btnn scrl-btn">SCROLL DOWN</a>
-                    </div>
-                </div>
-                <div class="up-bar">
-                    <div class="scroll-up">
-                        <a href="#herro" class="btnn"><i class="fa-solid fa-chevron-up"></i></a>
-                    </div>
-                </div>
+              <div class="ac-btn hidden">
+                <button class="btn1 hidden rightt" onclick="closeNav()">
+                  CLOSE
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="about-body-div">
+          <div style="margin: auto">
+            <div class="abd-content">
+              <h1 class="abd-text" style="position: absolute">CONTACT US</h1>
+              <h1 class="abd-text2">CONTACT US</h1>
+            </div>
+            <div class="breadcrumb-container d-flex">
+              <nav aria-label="breadcrumb" class="breadcrumb-before">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">HOME</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">
+                    CONTACT US
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="whatsapp">
+          <!-- WhatsApp Floating Chat Widget -->
+          <div id="whatsapp-chat">
+            <a href="https://wa.me/919348241464?text=Hello%20Jay%20Mahaveer%20Engineers,%20I%20am%20interested%20in%20your%20steel%20structure%20services."
+              target="_blank" id="whatsapp-button">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="Chat with us on WhatsApp" />
+            </a>
+          </div>
+        </div>
+        <div class="down-bar">
+          <div class="scroll-down">
+            <a href="#aboutt" class="btnn scrl-btn">SCROLL DOWN</a>
+          </div>
+        </div>
+        <div class="up-bar">
+          <div class="scroll-up">
+            <a href="#herro" class="btnn"><i class="fa-solid fa-chevron-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contactForm py-5" id="contactformm">
+    <div class="container-fluid contactFormDiv">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-lg-6 socialElementorBox px-5">
+          <div class="socialElementor contactsection">
+            <h3>Drop us a message, and we’ll be in touch soon</h3>
+          </div>
+          <div class="socialElementor contactsection">
+            <p>
+              Got a question, need help, or want to explore working with us?
+              Just send us a message—we’ll get back to you quickly. Whether
+              it’s something small or a detailed request, your message is
+              important to us, and we’re here to support you.
+            </p>
+          </div>
+          <div class="socialElementor contactsection">
+            <h4>Follow our social media</h4>
+          </div>
+          <div class="socialElementor contactsection">
+            <ul class="p-0 d-flex">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 socialElementorBox px-5">
+          <div class="socialElementorform">
+            <form action="#" method="post">
+              <div class="custom-form-group">
+                <div style="flex: 1">
+                  <label class="custom-label" for="name">Name</label>
+                  <input type="text" id="name" class="custom-input" placeholder="Name" />
+                </div>
+                <div style="flex: 1">
+                  <label class="custom-label" for="phone">Phone</label>
+                  <input type="text" id="phone" class="custom-input" placeholder="Phone" />
+                </div>
+              </div>
+
+              <div class="custom-form-group">
+                <div style="flex: 1">
+                  <label class="custom-label" for="email">Email</label>
+                  <input type="email" id="email" class="custom-input" placeholder="Email" />
+                </div>
+                <div style="flex: 1">
+                  <label class="custom-label" for="company">Company</label>
+                  <input type="text" id="company" class="custom-input" placeholder="Company" />
+                </div>
+              </div>
+
+              <div class="custom-form-group">
+                <div style="flex: 1">
+                  <label class="custom-label" for="subject">Subject</label>
+                  <input type="text" id="subject" class="custom-input" placeholder="Subject" />
+                </div>
+              </div>
+
+              <div class="custom-form-group">
+                <div style="flex: 1">
+                  <label class="custom-label" for="message">Message</label>
+                  <textarea id="message" class="custom-textarea" placeholder="Message"></textarea>
+                </div>
+              </div>
+
+              <div class="custom-recaptcha">
+                <!-- Replace with actual Google reCAPTCHA script -->
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+              </div>
+
+              <button type="submit" class="custom-btn-submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="locationelementorbox py-5 ">
+    <div class="container-fluid locationelementordiv">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="locationelementor d-flex align-items-center">
+            <div class="embed-map-responsive"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=700&height=400&hl=en&q=jay%20mahaveer%20engineers&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://sprunkiretake.net" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">sprunki retake</a></div><style>.embed-map-responsive{position:relative;text-align:right;width:100%;height:0;padding-bottom:66.66666666666666%;}.embed-map-container{overflow:hidden;background:none!important;width:100%;height:100%;position:absolute;top:0;left:0;}.embed-map-frame{width:100%!important;height:100%!important;position:absolute;top:0;left:0;}</style></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="locationelementor contactsection">
+            <h3>Get in touch with us</h3>
+          </div>
+          <div class="locationelementor contactsection">
+            <p>
+              Have questions or need assistance? We’re here to help! Reach out
+              to us anytime—our team is ready to support you.
+            </p>
+          </div>
+          <div class="locationelementor cardsection">
+            <div class="row g-2">
+              <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                <div class="card cardcolor" style="width: 98%; height:170px; ">
+                  <div class="card-body">
+                    <h5 class="card-title">Office</h5>
+                    <div class="d-flex">
+                      <i class="fa-solid fa-location-dot m-auto me-2"></i>
+                      <p class="card-text">
+                        Plot no-983, Samantarapur, OldTown, Bhubaneswar,
+                        Odisha 751002.<br /> Opposite of Axis Bank.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                <div class="card cardcolor" style="width: 98%; height:170px; ">
+                  <div class="card-body">
+                    <h5 class="card-title">Email Us</h5>
+                    <a class="email-link" href="mailto:jaymahaveerengineers@gmail.com">
+                      <i class="fa-solid fa-envelope"></i>
+                      <span>jaymahaveerengineers@gmail.com</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                <div class="card cardcolor" style="width: 98%; height:140px; ">
+                  <div class="card-body">
+                    <h5 class="card-title">Call Us</h5>
+                    <p>
+                      <i class="fa-solid fa-phone"></i>
+                      <span>+91 9348241464</span>
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-mobile"></i>
+                      <span>+91 6370373673</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                <div class="card cardcolor" style="width: 98%; height:140px; ">
+                  <div class="card-body">
+                    <h5 class="card-title">Office Hours</h5>
+                    <p>
+                      <i class="fa-regular fa-clock"></i>
+                      <span>Mon-Sat 10:00AM - 7:00PM</span>
+                    </p>
+                    <p>
+                      <i class="fa-regular fa-circle-xmark"></i>
+                      <span>Sunday - Close</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section class="footer" id="footer">
+      <div class="container-fluid footer-div">
+        <div class="footer-container row">
+          <div class="col-4 p-0 px-2">
+            <div class="logo mb-2">
+              <a href="index.html" class="text-center">JAY MAHAVEER<br />ENGINEERS</a>
+            </div>
+            <div class="footer-box mb-2">
+              <p class="footer-sub-head">CONTACT US</p>
+              <p>
+                We prioritize transparency, quality <br />
+                and client satisfaction in every project
+              </p>
+            </div>
+          </div>
+          <div class="col-2 p-0 px-2">
+            <div class="footer-box mb-2">
+              <p class="footer-sub-head">Information</p>
+              <ul class="p-0">
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">More Search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 p-0 px-2">
+            <div class="footer-box mb-2">
+              <p class="footer-sub-head">Helpful Links</p>
+              <ul class="p-0">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Supports</a></li>
+                <li><a href="#">Term & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4 p-0 px-2">
+            <div class="footer-box mb-2">
+              <p class="footer-subscribe-head" style="">
+                Subscribe More Info
+              </p>
+              <form action="subscribe" method="post">
+                <div class="email d-flex">
+                  <i class="fa-solid fa-envelope px-2"></i>
+                  <input type="email" name="email" placeholder="Enter Your Email" />
+                </div>
+                <button type="" class="btn btn-warning">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 contact-down">
+            <div class="footer-box mb-2">
+              <p class="footer-sub-head">Contact us</p>
+              <ul class="p-0">
+                <li>
+                  <span><i class="fa-solid fa-phone"></i></span>
+                  <span>+91 9348241464</span>
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-envelope"></i></span>
+                  <span><a
+                      href="mailto:jaymahaveerengineers@gmail.com?subject=Approch for Job&amp;body=Hello i would like to contact you.">jaymahaveerengineers@gmail.com</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-4">
+          <div class="col-12 social-icon d-flex justify-content-center">
+            <ul class="p-0">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright d-flex justify-content-center">
+            <p>&copy; 2023 Jaymahaveer Engineers All rights reserved |</p>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <footer>
-        <section class="footer" id="footer">
-            <div class="container-fluid footer-div">
-                <div class="footer-container row">
-                    <div class="col-4 p-0 px-2">
-                        <div class="logo mb-2">
-                            <a href="index.html" class="text-center">JAY MAHAVEER<br>ENGINEERS</a>
-                        </div>
-                        <div class="footer-box mb-2">
-                            <p class="footer-sub-head">CONTACT US</p>
-                            <p>We prioritize transparency, quality <br> and client satisfaction in every project</p>
-                        </div>
-
-
-                    </div>
-                    <div class="col-2 p-0 px-2">
-                        <div class="footer-box mb-2">
-                            <p class="footer-sub-head">Information</p>
-                            <ul class="p-0">
-                                <li><a href="#">CONTACT US</a></li>
-                                <li><a href="#">More Search</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">Events</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-2 p-0 px-2">
-                        <div class="footer-box mb-2">
-                            <p class="footer-sub-head">Helpful Links</p>
-                            <ul class="p-0">
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Supports</a></li>
-                                <li><a href="#">Term & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-4 p-0 px-2">
-                        <div class="footer-box mb-2">
-                            <p class="footer-subscribe-head" style="">Subscribe More Info</p>
-                            <form action="subscribe" method="post">
-                                <div class="email d-flex">
-                                    <i class="fa-solid fa-envelope px-2"></i>
-                                    <input type="email" name="email" placeholder="Enter Your Email">
-                                </div>
-                                <button type="" class="btn btn-warning">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-12 contact-down">
-                        <div class="footer-box mb-2">
-                            <p class="footer-sub-head">Contact us</p>
-                            <ul class="p-0">
-                                <li>
-                                    <span><i class="fa-solid fa-phone"></i></span>
-                                    <span>+91 9348241464</span>
-                                </li>
-                                <li>
-                                    <span><i class="fa-regular fa-envelope"></i></span>
-                                    <span><a
-                                            href="mailto:jaymahaveerengineers@gmail.com?subject=Approch for Job&amp;body=Hello i would like to contact you.">jaymahaveerengineers@gmail.com</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row p-4">
-                    <div class="col-12 social-icon d-flex justify-content-center">
-                        <ul class="p-0">
-                            <li>
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="copyright d-flex justify-content-center">
-                        <p>&copy; 2023 Jaymahaveer Engineers All rights reserved |</p>
-                    </div>
-                </div>
+    <section class="footer2" id="footer2">
+      <div class="container-fluid footer-div2">
+        <div class="footer-container2 row">
+          <div class="row">
+            <div class="col-12 social-icon d-flex justify-content-center">
+              <ul class="p-0">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
             </div>
-        </section>
-        <section class="footer2" id="footer2">
-            <div class="container-fluid footer-div2">
-                <div class="footer-container2 row">
-                    <div class="row">
-                        <div class="col-12 social-icon d-flex justify-content-center">
-                            <ul class="p-0">
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12">
-                            <div class="footer-box mb-2 d-flex justify-content-center">
-                                <form action="subscribe" method="post">
-                                    <div class="inp-container">
-                                        <input class="m-s-size" type="text" name="" id=""
-                                            placeholder="Enter Your Email Id to Subscribe">
-                                        <button class="m-s-size" type="submit">
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <ul class="p-0 d-flex justify-content-between footer-acp">
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <div class="logo mb-2 text-center">
-                                <a href="index.html" class="text-center">JAY MAHAVEER<br>ENGINEERS</a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="copyright d-flex justify-content-center">
-                                <p>&copy; 2023 Jaymahaveer Engineers All rights reserved</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="col-12">
+              <div class="footer-box mb-2 d-flex justify-content-center">
+                <form action="subscribe" method="post">
+                  <div class="inp-container">
+                    <input class="m-s-size" type="text" name="" id="" placeholder="Enter Your Email Id to Subscribe" />
+                    <button class="m-s-size" type="submit">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-        </section>
-    </footer>
+            <div class="col-12">
+              <ul class="p-0 d-flex justify-content-between footer-acp">
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <div class="logo mb-2 text-center">
+                <a href="index.html" class="text-center">JAY MAHAVEER<br />ENGINEERS</a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="copyright d-flex justify-content-center">
+                <p>&copy; 2023 Jaymahaveer Engineers All rights reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
 
-    <script>
-        function openNav() {
-            const hideNav = document.getElementById("hide-box");
-            hideNav.classList.add("nav-dw"); // Adds the nav-dw class
+  <script>
+    function openNav() {
+      const hideNav = document.getElementById("hide-box");
+      hideNav.classList.add("nav-dw"); // Adds the nav-dw class
 
-            // Toggle button states
-            const activeBtn = document.querySelector('.ac-btn.active');
-            const hiddenBtn = document.querySelector('.ac-btn.hidden');
+      // Toggle button states
+      const activeBtn = document.querySelector(".ac-btn.active");
+      const hiddenBtn = document.querySelector(".ac-btn.hidden");
 
-            // Swap button classes
-            activeBtn.classList.remove('active');
-            activeBtn.classList.add('hidden');
+      // Swap button classes
+      activeBtn.classList.remove("active");
+      activeBtn.classList.add("hidden");
 
-            hiddenBtn.classList.remove('hidden');
-            hiddenBtn.classList.add('active');
-        }
-        function openSearch() {
-            const searchBox = document.getElementById("hide-box2");
-            searchBox.classList.add("nav-dw"); // Adds the nav-dw class
+      hiddenBtn.classList.remove("hidden");
+      hiddenBtn.classList.add("active");
+    }
+    function openSearch() {
+      const searchBox = document.getElementById("hide-box2");
+      searchBox.classList.add("nav-dw"); // Adds the nav-dw class
 
-            // Toggle button states
-            const activeBtn = document.querySelector('.ac-btn.active');
-            const hiddenBtn = document.querySelector('.ac-btn.hidden');
+      // Toggle button states
+      const activeBtn = document.querySelector(".ac-btn.active");
+      const hiddenBtn = document.querySelector(".ac-btn.hidden");
 
-            // Swap button classes
-            activeBtn.classList.remove('active');
-            activeBtn.classList.add('hidden');
+      // Swap button classes
+      activeBtn.classList.remove("active");
+      activeBtn.classList.add("hidden");
 
-            hiddenBtn.classList.remove('hidden');
-            hiddenBtn.classList.add('active');
-        }
-        function closeNav() {
-            const hideNav = document.getElementById("hide-box");
-            const hideNav2 = document.getElementById("hide-box2");
-            hideNav.classList.remove("nav-dw"); // Removes the nav-dw class to slide it up
-            hideNav2.classList.remove("nav-dw"); // Removes the nav-dw class to slide it up
+      hiddenBtn.classList.remove("hidden");
+      hiddenBtn.classList.add("active");
+    }
+    function closeNav() {
+      const hideNav = document.getElementById("hide-box");
+      const hideNav2 = document.getElementById("hide-box2");
+      hideNav.classList.remove("nav-dw"); // Removes the nav-dw class to slide it up
+      hideNav2.classList.remove("nav-dw"); // Removes the nav-dw class to slide it up
 
-            // Toggle button states
-            const activeBtn = document.querySelector('.ac-btn.active');
-            const hiddenBtn = document.querySelector('.ac-btn.hidden');
+      // Toggle button states
+      const activeBtn = document.querySelector(".ac-btn.active");
+      const hiddenBtn = document.querySelector(".ac-btn.hidden");
 
-            // Swap button classes back
-            activeBtn.classList.remove('active');
-            activeBtn.classList.add('hidden');
+      // Swap button classes back
+      activeBtn.classList.remove("active");
+      activeBtn.classList.add("hidden");
 
-            hiddenBtn.classList.remove('hidden');
-            hiddenBtn.classList.add('active');
-        }
-    </script>
+      hiddenBtn.classList.remove("hidden");
+      hiddenBtn.classList.add("active");
+    }
+  </script>
 
-    <script src="https://kit.fontawesome.com/760b2a4ec2.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/760b2a4ec2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

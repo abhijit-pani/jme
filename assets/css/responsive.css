@@ -106,7 +106,7 @@
         padding: 5px 10px;
     }
     .nav-tab-btn ul li span a{
-        font-size: 30px;
+        font-size:25px;
       }
       .about-body-div .abd-content .abd-text{
         font-size: 73px;
@@ -131,5 +131,39 @@
       {
         width: 160px;
       }
-    
+      .hero-nav{
+        background-color: white;
+        padding: 0;
+        height: 75px;
+        align-items: center;
+      }
+      .logo a .logo-img {
+        width: 210px;
+      }
+      .ac-btn{
+        top: auto;
+        right: -15px;
+      }
+    .ac-btn .rightt {
+      top: 9px;
+      color: #7f7f7f;
+    }
+    .h-text h1{
+      text-align: center;
+      font-size: 19px;
+    }
+    .ourClient-div {
+    padding: 30px 0px;
+    }
+
+/* ---------------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------------- */
+
+
+
+
  }
